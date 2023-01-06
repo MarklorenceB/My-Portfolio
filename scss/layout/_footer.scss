@@ -1,0 +1,36 @@
+.footer {
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5rem;
+    @include mediaQuery($break-md) {
+      grid-template-columns: 1fr;
+    }
+    .contact {
+      p {
+        font-family: $font-primary;
+      }
+      .socialmedia {
+        ul {
+          li {
+            margin-right: 2rem;
+            a {
+              font-size: 2rem;
+              color: $clr-light;
+            }
+          }
+        }
+      }
+    }
+    .side {
+      h3 {
+        font-weight: bold;
+        font-size: 2.5rem;
+      }
+      p {
+        font-family: $font-primary;
+        margin: 0;
+      }
+    }
+  }
+}

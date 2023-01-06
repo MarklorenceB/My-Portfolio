@@ -1,0 +1,28 @@
+$clr-accent: hsl(157, 83%, 40%);
+$clr-blue: hsl(180, 5%, 8%);
+$clr-dark: rgb(63, 61, 61);
+$clr-dark1: rgb(0, 0, 0);
+$clr-light: hsl(0, 0%, 100%);
+$clr-border: hsl(39, 100%, 64%);
+$clr-gray: hsl(0, 0%, 6%);
+
+$font-primary: "Poppins", Arial, sans-serif;
+$font-secondary: "Antic Didone", serif;
+
+$break-sm: 640px;
+$break-md: 768px;
+$break-lg: 1024px;
+$break-xl: 1280px;
+
+$container-padding: 1.5rem;
+$container-width: 120rem;
+$font-size: 1.6rem;
+$header-size: clamp(2rem, 7vw, 3rem);
+
+@function set-color($bg) {
+  @if (lightness($bg) > 50) {
+    @return $clr-dark;
+  } @else {
+    @return $clr-light;
+  }
+}
